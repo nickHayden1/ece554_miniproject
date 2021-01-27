@@ -1,0 +1,633 @@
+# //  Questa Sim
+# //  Version 2020.2_2 linux Jun 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# ** Warning: License feature 'msimviewer' will expire in 2 days.
+# Loading project POST_SYN
+# reading /cae/apps/data/mentor-2020/questasim/linux/../modelsim.ini
+# Loading project miniLab 1
+# Compile of afu.sv failed with 4 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# 3 compiles, 3 failed with 8 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# 3 compiles, 3 failed with 8 errors.
+# reading /cae/apps/data/mentor-2020/questasim/linux/../modelsim.ini
+# Loading project miniLab 1
+# Compile of afu.sv failed with 4 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 5 compiles, 3 failed with 8 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 5 compiles, 3 failed with 8 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 5 compiles, 3 failed with 8 errors.
+vsim work.fifo_tb
+# vsim work.fifo_tb 
+# Start time: 13:37:06 on Jan 27,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+# Loading sv_std.std
+# Loading work.fifo_tb(fast)
+add wave -position insertpoint sim:/fifo_tb/*
+# ** UI-Msg: (vish-4014) No objects found matching '/fifo_tb/*'.
+restart
+run
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error, incorrect value recorded. Expected:                     1, Got:                     z
+# Error, incorrect value recorded. Expected:                    -8, Got:                     z
+# Break key hit
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+run
+# Error, incorrect value recorded. Expected:                     3, Got:                     z
+# Error, incorrect value recorded. Expected:                 16457, Got:                     z
+# Error, incorrect value recorded. Expected:              89320567, Got:                     z
+# Error, incorrect value recorded. Expected:        58947128924718, Got:                     z
+# Error, incorrect value recorded. Expected:               -123567, Got:                     z
+# Error, incorrect value recorded. Expected:                    55, Got:                     z
+# Error. Failed retention (enable lock) test. Expected:                    55, Got:                     z
+# Errors:          17
+# ARRRR!  Ye codes be blast! Aye, there be errors. Get debugging!
+# ** Note: $stop    : /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo_tb.sv(93)
+#    Time: 166 ns  Iteration: 0  Instance: /fifo_tb
+# Break at /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo_tb.sv line 93
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.fifo_tb(fast)
+run
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error, incorrect value recorded. Expected:                     1, Got:                     z
+# Error, incorrect value recorded. Expected:                    -8, Got:                     z
+vsim work.fifo_tb -novopt
+# End time: 13:44:32 on Jan 27,2021, Elapsed time: 0:07:26
+# Errors: 0, Warnings: 1
+# vsim work.fifo_tb -novopt 
+# Start time: 13:44:32 on Jan 27,2021
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 13:44:32 on Jan 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim -novopt work.fifo_tb
+# vsim -novopt work.fifo_tb 
+# Start time: 13:44:44 on Jan 27,2021
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 13:44:45 on Jan 27,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim -novopt work.fifo_tb
+# vsim -novopt work.fifo_tb 
+# Start time: 13:44:57 on Jan 27,2021
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 13:44:57 on Jan 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim -vopt work.fifo_tb
+# vsim -vopt work.fifo_tb 
+# Start time: 13:45:06 on Jan 27,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+# Loading sv_std.std
+# Loading work.fifo_tb(fast)
+vsim -novopt work.fifo_tb
+# End time: 13:45:17 on Jan 27,2021, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 1
+# vsim -novopt work.fifo_tb 
+# Start time: 13:45:17 on Jan 27,2021
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 13:45:18 on Jan 27,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim -novopt work.fifo
+# vsim -novopt work.fifo 
+# Start time: 13:45:40 on Jan 27,2021
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 13:45:41 on Jan 27,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim -novopt work.fifo_tb
+# vsim -novopt work.fifo_tb 
+# Start time: 13:45:47 on Jan 27,2021
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 13:45:48 on Jan 27,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# Compile of afu.sv failed with 4 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 5 compiles, 3 failed with 8 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 5 compiles, 3 failed with 8 errors.
+vsim -vopt work.fifo_tb
+# vsim -vopt work.fifo_tb 
+# Start time: 14:01:19 on Jan 27,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+# Loading sv_std.std
+# Loading work.fifo_tb(fast)
+run
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error, incorrect value recorded. Expected:                     1, Got:                     z
+# Error, incorrect value recorded. Expected:                    -8, Got:                     z
+# Compile of fifo.sv was successful.
+vsim -vopt work.fifo_tb
+# End time: 14:02:06 on Jan 27,2021, Elapsed time: 0:00:47
+# Errors: 0, Warnings: 4
+# vsim -vopt work.fifo_tb 
+# Start time: 14:02:06 on Jan 27,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+# Loading sv_std.std
+# Loading work.fifo_tb(fast)
+run
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error! Reset was not conducted properly. Expected: 0, Got:                     z
+# Error, incorrect value recorded. Expected:                     1, Got:                     z
+# Error, incorrect value recorded. Expected:                    -8, Got:                     z
+# Compile of fifo.sv failed with 2 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv failed with 2 errors.
+# Compile of fifo_tb.sv was successful.
+# 5 compiles, 4 failed with 10 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv failed with 1 errors.
+# Compile of fifo_tb.sv was successful.
+# 5 compiles, 4 failed with 9 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv failed with 1 errors.
+# Compile of fifo_tb.sv was successful.
+# 5 compiles, 4 failed with 9 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv failed with 1 errors.
+# Compile of fifo_tb.sv was successful.
+# 5 compiles, 4 failed with 9 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 5 compiles, 3 failed with 8 errors.
+vsim -novopt work.fifo_tb
+# End time: 14:06:45 on Jan 27,2021, Elapsed time: 0:04:39
+# Errors: 0, Warnings: 7
+# vsim -novopt work.fifo_tb 
+# Start time: 14:06:45 on Jan 27,2021
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 14:06:45 on Jan 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim -vopt work.fifo_tb
+# vsim -vopt work.fifo_tb 
+# Start time: 14:06:55 on Jan 27,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+# Loading sv_std.std
+# Loading work.fifo_tb(fast)
+run
+# Error! Reset was not conducted properly. Expected: 0, Got:                     x
+# Error, incorrect value recorded. Expected:                     1, Got:                     0
+# Error, incorrect value recorded. Expected:                    -8, Got:                     1
+# Compile of afu.sv failed with 4 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 5 compiles, 3 failed with 8 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 5 compiles, 3 failed with 8 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 5 compiles, 3 failed with 8 errors.
+vsim -novopt work._opt
+# End time: 14:16:24 on Jan 27,2021, Elapsed time: 0:09:29
+# Errors: 0, Warnings: 7
+# vsim -novopt work._opt 
+# Start time: 14:16:24 on Jan 27,2021
+# ** Error (suppressible): (vsim-12110) -novopt option has no effect when used with the optimized design. -novopt option is now deprecated and will be removed in future releases.
+# ** Warning: (vsim-1963) Explicit invocation on automatically named optimized design "_opt" will not cause it to be locked.
+# Error loading design
+# End time: 14:16:24 on Jan 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+vsim -novopt work.fifo_tb
+# vsim -novopt work.fifo_tb 
+# Start time: 14:16:31 on Jan 27,2021
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 14:16:31 on Jan 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim -vopt work.fifo_tb
+# vsim -vopt work.fifo_tb 
+# Start time: 14:16:40 on Jan 27,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+# Loading sv_std.std
+# Loading work.fifo_tb(fast)
+run
+# Error! Reset was not conducted properly. Expected: 0, Got:                     x
+# Error, incorrect value recorded. Expected:                     1, Got:                     0
+# Error, incorrect value recorded. Expected:                    -8, Got:                     1
+# Compile of afu.sv failed with 4 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 5 compiles, 3 failed with 8 errors.
+vsim -vopt work.fifo_tb
+# End time: 14:18:33 on Jan 27,2021, Elapsed time: 0:01:53
+# Errors: 0, Warnings: 2
+# vsim -vopt work.fifo_tb 
+# Start time: 14:18:33 on Jan 27,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+# Loading sv_std.std
+# Loading work.fifo_tb(fast)
+run
+# Error! Reset was not conducted properly. Expected: 0, Got:                     x
+# Error, incorrect value recorded. Expected:                     1, Got:                     0
+# Error, incorrect value recorded. Expected:                    -8, Got:                     1
+run
+# Error, incorrect value recorded. Expected:                     3, Got:                    -8
+# Error, incorrect value recorded. Expected:                 16457, Got:                     3
+# Error, incorrect value recorded. Expected:              89320567, Got:                 16457
+# Error, incorrect value recorded. Expected:        58947128924718, Got:              89320567
+# Error, incorrect value recorded. Expected:               -123567, Got:        58947128924718
+# Error, incorrect value recorded. Expected:                    55, Got:               -123567
+# Error. Failed retention (enable lock) test. Expected:                    55, Got:               -123567
+# Errors:          10
+# ARRRR!  Ye codes be blast! Aye, there be errors. Get debugging!
+# ** Note: $stop    : /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo_tb.sv(93)
+#    Time: 166 ns  Iteration: 0  Instance: /fifo_tb
+# Break at /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo_tb.sv line 93
+run
+run
+run
+# Load canceled
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.fifo_tb(fast)
+run
+# Error! Reset was not conducted properly. Expected: 0, Got:                     x
+# Error, incorrect value recorded. Expected:                     1, Got:                     0
+# Error, incorrect value recorded. Expected:                    -8, Got:                     1
+# Compile of afu.sv failed with 4 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 5 compiles, 3 failed with 8 errors.
+vsim -vopt work.fifo_tb
+# End time: 14:19:34 on Jan 27,2021, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 2
+# vsim -vopt work.fifo_tb 
+# Start time: 14:19:34 on Jan 27,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+# Loading sv_std.std
+# Loading work.fifo_tb(fast)
+run
+# Error! Reset was not conducted properly. Expected: 0, Got:                     x
+# Error, incorrect value recorded. Expected:                     1, Got:                     0
+# Error, incorrect value recorded. Expected:                    -8, Got:                     1
+vsim -vopt work.fifo_tb
+# End time: 14:20:31 on Jan 27,2021, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 1
+# vsim -vopt work.fifo_tb 
+# Start time: 14:20:31 on Jan 27,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+# Loading sv_std.std
+# Loading work.fifo_tb(fast)
+vsim -novopt work.fifo_tb
+# End time: 14:20:48 on Jan 27,2021, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 1
+# vsim -novopt work.fifo_tb 
+# Start time: 14:20:48 on Jan 27,2021
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 14:20:48 on Jan 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim -novopt work.fifo_tb
+# vsim -novopt work.fifo_tb 
+# Start time: 14:21:04 on Jan 27,2021
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 14:21:04 on Jan 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim -vopt work.fifo_tb
+# vsim -vopt work.fifo_tb 
+# Start time: 14:21:11 on Jan 27,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+# Loading sv_std.std
+# Loading work.fifo_tb(fast)
+# Compile of AFU.h failed with 1 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of AFU.cpp failed with 1 errors.
+# Compile of main.cpp failed with 1 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 8 compiles, 6 failed with 11 errors.
+# Compile of AFU.h failed with 1 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of AFU.cpp failed with 1 errors.
+# Compile of main.cpp failed with 1 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 8 compiles, 6 failed with 11 errors.
+vsim -novopt work.fifo_tb
+# End time: 14:23:22 on Jan 27,2021, Elapsed time: 0:02:11
+# Errors: 0, Warnings: 4
+# vsim -novopt work.fifo_tb 
+# Start time: 14:23:22 on Jan 27,2021
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 14:23:23 on Jan 27,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim -vopt work.fifo_tb
+# vsim -vopt work.fifo_tb 
+# Start time: 14:23:31 on Jan 27,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+# Loading sv_std.std
+# Loading work.fifo_tb(fast)
+run
+# Error! Reset was not conducted properly. Expected: 0, Got:                     x
+# Error, incorrect value recorded. Expected:                     1, Got:                     0
+# Error, incorrect value recorded. Expected:                    -8, Got:                     1
+# Compile of AFU.h failed with 1 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of AFU.cpp failed with 1 errors.
+# Compile of main.cpp failed with 1 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 8 compiles, 6 failed with 11 errors.
+vsim -vopt work.fifo_tb
+# End time: 14:27:54 on Jan 27,2021, Elapsed time: 0:04:23
+# Errors: 0, Warnings: 2
+# vsim -vopt work.fifo_tb 
+# Start time: 14:27:54 on Jan 27,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+# Loading sv_std.std
+# Loading work.fifo_tb(fast)
+run
+# Error! Reset was not conducted properly. Expected: 0, Got:                     x
+# Error, incorrect value recorded. Expected:                     1, Got:                     0
+# Error, incorrect value recorded. Expected:                    -8, Got:                     1
+run
+# Error, incorrect value recorded. Expected:                     3, Got:                    -8
+# Error, incorrect value recorded. Expected:                 16457, Got:                     3
+# Error, incorrect value recorded. Expected:              89320567, Got:                 16457
+# Error, incorrect value recorded. Expected:        58947128924718, Got:              89320567
+# Error, incorrect value recorded. Expected:               -123567, Got:        58947128924718
+# Error, incorrect value recorded. Expected:                    55, Got:               -123567
+# Error. Failed retention (enable lock) test. Expected:                    55, Got:               -123567
+# Errors:          10
+# ARRRR!  Ye codes be blast! Aye, there be errors. Get debugging!
+# ** Note: $stop    : /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo_tb.sv(93)
+#    Time: 166 ns  Iteration: 0  Instance: /fifo_tb
+# Break at /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo_tb.sv line 93
+# Compile of AFU.h failed with 1 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of AFU.cpp failed with 1 errors.
+# Compile of main.cpp failed with 1 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 8 compiles, 6 failed with 11 errors.
+vsim -vopt work.fifo_tb
+# End time: 14:30:33 on Jan 27,2021, Elapsed time: 0:02:39
+# Errors: 0, Warnings: 2
+# vsim -vopt work.fifo_tb 
+# Start time: 14:30:33 on Jan 27,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+# Loading sv_std.std
+# Loading work.fifo_tb(fast)
+run
+# Error! Reset was not conducted properly. Expected: 0, Got:                     x
+# Error, incorrect value recorded. Expected:                     1, Got:                     0
+# Error, incorrect value recorded. Expected:                    -8, Got:                     1
+# Compile of AFU.h failed with 1 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of AFU.cpp failed with 1 errors.
+# Compile of main.cpp failed with 1 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 8 compiles, 6 failed with 11 errors.
+# Compile of AFU.h failed with 1 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of AFU.cpp failed with 1 errors.
+# Compile of main.cpp failed with 1 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 8 compiles, 6 failed with 11 errors.
+vsim -vopt work.fifo_tb
+# End time: 14:32:20 on Jan 27,2021, Elapsed time: 0:01:47
+# Errors: 0, Warnings: 3
+# vsim -vopt work.fifo_tb 
+# Start time: 14:32:20 on Jan 27,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+# Loading sv_std.std
+# Loading work.fifo_tb(fast)
+run
+# Error! Reset was not conducted properly. Expected: 0, Got:                     x
+# Error, incorrect value recorded. Expected:                     1, Got:                     0
+# Error, incorrect value recorded. Expected:                    -8, Got:                     1
+# Load canceled
+# Compile of AFU.h failed with 1 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of AFU.cpp failed with 1 errors.
+# Compile of main.cpp failed with 1 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 8 compiles, 6 failed with 11 errors.
+vsim -vopt work.fifo_tb
+# End time: 14:33:08 on Jan 27,2021, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 2
+# vsim -vopt work.fifo_tb 
+# Start time: 14:33:08 on Jan 27,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+# Loading sv_std.std
+# Loading work.fifo_tb(fast)
+run
+# Error! Reset was not conducted properly. Expected: 0, Got:                     x
+# Error, incorrect value recorded. Expected:                     1, Got:                     0
+# Error, incorrect value recorded. Expected:                    -8, Got:                     1
+# Compile of AFU.h failed with 1 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of AFU.cpp failed with 1 errors.
+# Compile of main.cpp failed with 1 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 8 compiles, 6 failed with 11 errors.
+vsim -vopt work.fifo_tb
+# End time: 14:34:20 on Jan 27,2021, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 2
+# vsim -vopt work.fifo_tb 
+# Start time: 14:34:20 on Jan 27,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+# Loading sv_std.std
+# Loading work.fifo_tb(fast)
+add wave -position insertpoint sim:/fifo_tb/*
+# ** UI-Msg: (vish-4014) No objects found matching '/fifo_tb/*'.
+run
+# Error! Reset was not conducted properly. Expected: 0, Got:                     x
+# Error, incorrect value recorded. Expected:                     1, Got:                     0
+# Error, incorrect value recorded. Expected:                    -8, Got:                     1
+vsim -novopt work.fifo_tb
+# End time: 14:34:53 on Jan 27,2021, Elapsed time: 0:00:33
+# Errors: 0, Warnings: 1
+# vsim -novopt work.fifo_tb 
+# Start time: 14:34:53 on Jan 27,2021
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 14:34:53 on Jan 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim -novopt work.fifo_tb
+# vsim -novopt work.fifo_tb 
+# Start time: 14:35:39 on Jan 27,2021
+# ** Error (suppressible): (vsim-12110) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Error loading design
+# End time: 14:35:39 on Jan 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim -voptargs=+acc work.fifo_tb
+# vsim work.fifo_tb 
+# Start time: 14:35:51 on Jan 27,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+# Loading sv_std.std
+# Loading work.fifo_tb(fast)
+run
+# Error! Reset was not conducted properly. Expected: 0, Got:                     x
+# Error, incorrect value recorded. Expected:                     1, Got:                     0
+# Error, incorrect value recorded. Expected:                    -8, Got:                     1
+# Compile of AFU.h failed with 1 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of AFU.cpp failed with 1 errors.
+# Compile of main.cpp failed with 1 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 8 compiles, 6 failed with 11 errors.
+vsim work.fifo_tb
+# End time: 14:38:03 on Jan 27,2021, Elapsed time: 0:02:12
+# Errors: 0, Warnings: 2
+# vsim work.fifo_tb 
+# Start time: 14:38:03 on Jan 27,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: License feature 'msimhdlsim' will expire in 2 days.
+# Loading sv_std.std
+# Loading work.fifo_tb(fast)
+run
+# Error, incorrect value recorded. Expected:                     1, Got:                     0
+# Error, incorrect value recorded. Expected:                    -8, Got:                     1
+# Break key hit
+# Break key hit
+# Compile of AFU.h failed with 1 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of AFU.cpp failed with 1 errors.
+# Compile of AFU.h failed with 2 errors.
+# Compile of afu.sv failed with 4 errors.
+# Compile of AFU.cpp failed with 1 errors.
+# Compile of main.cpp failed with 1 errors.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 8 compiles, 6 failed with 12 errors.
+# Compile of main.cpp was successful.
+# Compile of ccip_interface_reg.sv failed with 2 errors.
+# Compile of ccip_std_afu.sv failed with 2 errors.
+# Compile of fifo.sv was successful.
+# Compile of fifo_tb.sv was successful.
+# 8 compiles, 5 failed with 10 errors.

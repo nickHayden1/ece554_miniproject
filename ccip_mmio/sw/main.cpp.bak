@@ -58,21 +58,12 @@ int main(int argc, char *argv[]) {
       afu.write(USER_REG_ADDR, i);
       uint64_t result = afu.read(USER_REG_ADDR);
 
-      if ((result-8) != i&& (i>7)) {
+      if (result != i) {
 	cerr << "ERROR: Read from MMIO register has incorrect value " << result << " instead of " << i << endl;
 	errors ++;
       }
     }
-	//Check last 8 values
-    for (uint64_t j=92; j < 100; j++) {
-      afu.write(USER_REG_ADDR, 0);
-      uint64_t result = afu.read(USER_REG_ADDR);
 
-      if ((result != i&&) {
-	cerr << "ERROR: Read from MMIO register has incorrect value " << result << " instead of " << i << endl;
-	errors ++;
-      }
-    }
     if (errors == 0) {
       cout << "All MMIO tests succeeded." << endl;
       return EXIT_SUCCESS;

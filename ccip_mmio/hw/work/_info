@@ -1,0 +1,71 @@
+m255
+K4
+z2
+!s11f vlog 2020.2_2 2020.06, Jun 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/filespace/n/nhayden/ece551/POST
+T_opt
+!s110 1611779883
+VbkCMlBTW6jlIb9_<AnVaC3
+04 7 4 work fifo_tb fast 0
+=1-000ae431a4f1-6011cf2b-35476-23d889
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OE;O;2020.2_2;71
+R0
+vfifo
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1611780556
+!i10b 1
+!s100 oO3mC8ZOSQ0ajabaJ_4U50
+Z4 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I[O65V?;]iJOfAYOK:IY;53
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z6 d/filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw
+w1611779875
+8/filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo.sv
+F/filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo.sv
+!i122 47
+L0 6 27
+Z7 OE;L;2020.2_2;71
+r1
+!s85 0
+31
+!s108 1611780555.000000
+!s107 /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo.sv|
+!i113 0
+Z8 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vfifo_tb
+R2
+R3
+!i10b 1
+!s100 J`J:jF?4e0c>Y]JOTf_U00
+R4
+ISe`iGUTm<`M_K[Zm6TlVj1
+R5
+S1
+R6
+w1611776029
+8/filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo_tb.sv
+F/filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo_tb.sv
+!i122 48
+L0 3 95
+R7
+r1
+!s85 0
+31
+!s108 1611780556.000000
+!s107 /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo_tb.sv|
+!i113 0
+R8
+R1

@@ -68,7 +68,7 @@ module afu
    // For MMIO responses (i.e. when c0 mmmioRdValid or mmioWrValid is asserted), we need to 
    // cast the c0 header into a ReqMmmioHdr. Basically, these same header bits in Rx c0 are used 
    // for different purposes depending on the response type.
-   fifo DUT(.clk(clk), .rst_n(rst_n), .en(rx.c0.mmioWrValid), .d(d), .q(q));
+   fifo DUT(.clk(clk), .rst_n(!rst), .en(rx.c0.mmioWrValid), .d(d), .q(q));
    t_ccip_c0_ReqMmioHdr mmio_hdr;
    assign mmio_hdr = t_ccip_c0_ReqMmioHdr'(rx.c0.hdr);
 
@@ -91,8 +91,8 @@ module afu
 		  // memory-mapped register (h0020), then write the received data on channel c0 
 		  // to the register.
                   case (mmio_hdr.address)
-                    16'h0020: user_reg <= rx.c0.data[63:0];
-		    16'h0020: d <= rx.c0.data[63:0]
+                    //16'h0020: user_reg <= rx.c0.data[63:0];
+	            16'h0020: d <= rx.c0.data[63:0];
                   endcase
                end
           end

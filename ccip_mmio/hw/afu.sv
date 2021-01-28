@@ -69,7 +69,7 @@ module afu
    // For MMIO responses (i.e. when c0 mmmioRdValid or mmioWrValid is asserted), we need to 
    // cast the c0 header into a ReqMmmioHdr. Basically, these same header bits in Rx c0 are used 
    // for different purposes depending on the response type.
-   fifo DUT(.clk(clk), .rst_n(!rst), .en(rx.c0.mmioWrValid), .d(d), .q(q));
+   fifo iDUT(.clk(clk), .rst_n(~rst), .en(rx.c0.mmioWrValid), .d(d), .q(q));
    t_ccip_c0_ReqMmioHdr mmio_hdr;
    assign mmio_hdr = t_ccip_c0_ReqMmioHdr'(rx.c0.hdr);
 

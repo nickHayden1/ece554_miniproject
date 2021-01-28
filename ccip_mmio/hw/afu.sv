@@ -63,7 +63,8 @@ module afu
 
    // User register (memory mapped to address h0020) to test MMIO over CCI-P.
    logic [63:0]  user_reg;
-   
+   logic [63:0] q;
+   logic [63:0] d;
    // The Rx c0 header is normally used for responses to reads from the host processor's memory.
    // For MMIO responses (i.e. when c0 mmmioRdValid or mmioWrValid is asserted), we need to 
    // cast the c0 header into a ReqMmmioHdr. Basically, these same header bits in Rx c0 are used 

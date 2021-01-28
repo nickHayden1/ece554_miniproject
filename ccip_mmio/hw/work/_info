@@ -8,64 +8,63 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/filespace/n/nhayden/ece551/POST
+d/filespace/n/nhayden/ece551/POST
 T_opt
-!s110 1611779883
-VbkCMlBTW6jlIb9_<AnVaC3
+!s110 1611796961
+Vd<zC1CONeKf_RB?ad6ZJ61
 04 7 4 work fifo_tb fast 0
-=1-000ae431a4f1-6011cf2b-35476-23d889
+=1-000ae431a4f1-601211e1-93d0e-23ef94
 o-quiet -auto_acc_if_foreign -work work
-Z1 tCvgOpt 0
+Z0 tCvgOpt 0
 n@_opt
 OE;O;2020.2_2;71
-R0
 vfifo
-Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z3 !s110 1611780556
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1611796954
 !i10b 1
-!s100 oO3mC8ZOSQ0ajabaJ_4U50
-Z4 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I[O65V?;]iJOfAYOK:IY;53
-Z5 VDg1SIo80bB@j0V0VzS_@n1
+!s100 ;KFWHjRe6ZgQ]CEE`@9WF3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IT4^k9WhzR3_jjMLddTL?M3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
-Z6 d/filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw
-w1611779875
+Z5 d/filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw
+w1611796948
 8/filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo.sv
 F/filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo.sv
-!i122 47
-L0 6 27
-Z7 OE;L;2020.2_2;71
+!i122 81
+L0 6 28
+Z6 OE;L;2020.2_2;71
 r1
 !s85 0
 31
-!s108 1611780555.000000
+Z7 !s108 1611796954.000000
 !s107 /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo.sv|
 !i113 0
 Z8 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
+R0
 vfifo_tb
+R1
 R2
-R3
 !i10b 1
 !s100 J`J:jF?4e0c>Y]JOTf_U00
-R4
+R3
 ISe`iGUTm<`M_K[Zm6TlVj1
-R5
+R4
 S1
-R6
+R5
 w1611776029
 8/filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo_tb.sv
 F/filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo_tb.sv
-!i122 48
+!i122 82
 L0 3 95
-R7
+R6
 r1
 !s85 0
 31
-!s108 1611780556.000000
+R7
 !s107 /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo_tb.sv|
 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|/filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo_tb.sv|
 !i113 0
 R8
-R1
+R0

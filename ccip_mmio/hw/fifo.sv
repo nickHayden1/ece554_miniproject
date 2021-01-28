@@ -10,23 +10,24 @@ module fifo
   )
   (
   input clk,rst_n,en,
-  input [BITS-1:0] d,
-  output reg [BITS-1:0] q
+  input logic [BITS-1:0] d,
+  output logic [BITS-1:0] q
   );
   // your RTL code here
   reg [BITS-1:0] arr[DEPTH-1:0];
   integer i=0;
   integer ptr = 0;
+  assign q = arr[ptr]; 
   always@(posedge clk, negedge rst_n) begin
     if(~rst_n)begin
       for(i=0; i<DEPTH; i++)begin
         arr[i]<=64'd0;
       end
-      q<=arr[0];
+      //q<= 64'd0;
     end else if(en) begin
-      q <= arr[ptr];
-      arr[ptr]<=d;
+      //q <= arr[ptr];
       ptr<= (ptr +1)%8;
+      arr[ptr]<=d;
     end
   end
 endmodule // fifo

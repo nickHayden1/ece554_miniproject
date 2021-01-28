@@ -1,45 +1,8 @@
-/filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/afu.sv {0 {vlog -work work -vopt -sv -stats=none /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/afu.sv
-QuestaSim vlog 2020.2_2 Compiler 2020.06 Jun 13 2020
-** Error: /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/afu.sv(43): Cannot find `include file "platform_if.vh" in directories:
-    /cae/apps/data/mentor-2020/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /cae/apps/data/mentor-2020/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
-** Error: /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/afu.sv(44): Cannot find `include file "afu_json_info.vh" in directories:
-    /cae/apps/data/mentor-2020/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /cae/apps/data/mentor-2020/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
--- Compiling module afu
-** Error: (vlog-13069) /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/afu.sv(53): near "rx": syntax error, unexpected IDENTIFIER, expecting ')'.
-** Error: /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/afu.sv(62): (vlog-2163) Macro `AFU_ACCEL_UUID is undefined.
-
-} {3.0 4.0 5.0 6.0 8.0 10.0} {}} /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/ccip_interface_reg.sv {0 {vlog -work work -vopt -sv -stats=none /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/ccip_interface_reg.sv
-QuestaSim vlog 2020.2_2 Compiler 2020.06 Jun 13 2020
-** Error: /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/ccip_interface_reg.sv(37): (vlog-13006) Could not find the package (ccip_if_pkg).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
-** Error: (vlog-13069) /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/ccip_interface_reg.sv(45): near "pck_cp2af_sRx_T0": syntax error, unexpected IDENTIFIER, expecting ')'.
-
-} {3.0 5.0} {}} /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/ccip_std_afu.sv {0 {vlog -work work -vopt -sv -stats=none /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/ccip_std_afu.sv
-QuestaSim vlog 2020.2_2 Compiler 2020.06 Jun 13 2020
-** Error: /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/ccip_std_afu.sv(34): Cannot find `include file "platform_if.vh" in directories:
-    /cae/apps/data/mentor-2020/questasim/ovm-2.1.2/../verilog_src/ovm-2.1.2/src, /cae/apps/data/mentor-2020/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src
--- Compiling module ccip_std_afu
-** Error: (vlog-13069) /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/ccip_std_afu.sv(50): near "pck_cp2af_sRx": syntax error, unexpected IDENTIFIER, expecting ')'.
-
-} {3.0 4.0 6.0 7.0} {}} /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/sw/AFU.cpp {0 {sccom -work work -stats=none /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/sw/AFU.cpp
-sccom -reportprogress -work work -stats=none /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/sw/AFU.cpp 
-
-QuestaSim sccom 2020.2_2 compiler 2020.06 Jun 13 2020
-** Error (suppressible): (sccom-94) Unsupported operating system - Debian GNU/Linux 9 \n \l. Refer to the QuestaSim release notes for a list of supported operating systems.
-
-} {} {}} /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo_tb.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo_tb.sv
+/filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo_tb.sv {1 {vlog -work work -vopt -sv -stats=none /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/hw/fifo_tb.sv
 QuestaSim vlog 2020.2_2 Compiler 2020.06 Jun 13 2020
 -- Compiling module fifo_tb
 
 Top level modules:
 	fifo_tb
 
-} {} {}} /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/sw/main.cpp {0 {sccom -work work -stats=none /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/sw/main.cpp
-sccom -reportprogress -work work -stats=none /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/sw/main.cpp 
-
-QuestaSim sccom 2020.2_2 compiler 2020.06 Jun 13 2020
-** Error (suppressible): (sccom-94) Unsupported operating system - Debian GNU/Linux 9 \n \l. Refer to the QuestaSim release notes for a list of supported operating systems.
-
-} {} {}} /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/sw/AFU.h {0 {sccom -work work -stats=none /filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/sw/AFU.h
-** Error: (sccom-6130) File "/filespace/n/nhayden/ece554/ece554_miniproject/ccip_mmio/sw/AFU.h" passed on the command line does not have a valid C/C++ filename extension.
-
-} {2.0 3.0} {}}
+} {} {}}

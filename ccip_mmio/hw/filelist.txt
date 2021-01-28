@@ -1,6 +1,6 @@
 afu.json
 
-afu.sv
 fifo.sv
+afu.sv
 ccip_interface_reg.sv
 ccip_std_afu.sv
